@@ -6,7 +6,9 @@
       >
         <div class="max-w-4xl text-center mx-auto">
           <div class="mb-6">
-            <span class="text-indigo-600 font-semibold underline"> {{ articles[0].cat }} </span>
+            <span class="text-indigo-600 font-semibold underline">
+              {{ articles[0].cat }}
+            </span>
           </div>
           <h1 class="text-center text-2xl sm:text-4xl font-bold">
             {{ articles[0].title }}
@@ -123,7 +125,7 @@
     </section>
 
     <section class="app-wrapper">
-      <div class="app-container py-16 sm:py-24 pb-0 border-l border-r border-gray-300">
+      <div class="app-container py-16 sm:py-24 pb-20 border-l border-r border-gray-300">
         <div class="flex justify-between item-center">
           <h2 class="text-xl sm:text-3xl font-bold mb-12">
             Next Blog
@@ -131,7 +133,9 @@
               <span class="mx-2">-</span> {{ articles[1].cat }}</span
             >
           </h2>
-          <NuxtLink to="/" class="text-indigo-600 font-semibold underline"> ./Home </NuxtLink>
+          <NuxtLink to="/" class="text-indigo-600 font-semibold underline">
+            ./Home
+          </NuxtLink>
         </div>
 
         <NuxtLink

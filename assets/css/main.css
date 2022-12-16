@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: "General Sans", sans-serif !important;
+	font-weight: 500 !important;
+	@apply text-indigo-900;
+}
+
+.font-medium {
+	font-weight: 500 !important;
+}
+
+.app-wrapper {
+	@apply w-full flex justify-center;
+}
+
+.app-container {
+	@apply max-w-[1200px] w-full px-4 sm:px-8 mx-3;
+}
+
+.app-box-shadow-1 {
+	box-shadow: 0 4px 2.5rem 0 rgb(0 0 0 / 8%);
+	@apply border border-indigo-100;
+}
+
+.app-box-shadow-2 {
+	@apply fixed -z-10 left-0 right-0 top-0 h-[74px]  sm:h-[98px] w-full bg-white  bg-opacity-[0.1] backdrop-filter backdrop-blur-md;
+}
+
+nav .router-link-active.router-link-exact-active {
+	@apply text-indigo-600;
+	border: 3px solid #ffe68d;
+	border-radius: 250%;
+	-webkit-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	padding: 0px 20px;
+}
+
+h1 {
+	line-height: 1.2 !important;
+}

@@ -77,6 +77,12 @@
               for me in the long run.
             </p>
           </div>
+
+          <div class="text-center w-full mt-12">
+            <NuxtLink to="/" class="text-indigo-600 font-semibold underline underline">
+              Back to Home Page
+            </NuxtLink>
+          </div>
         </div>
       </div>
     </section>

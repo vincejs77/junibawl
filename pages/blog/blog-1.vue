@@ -6,7 +6,7 @@
       >
         <div class="max-w-4xl text-center mx-auto">
           <div class="mb-6">
-            <span class="text-indigo-600 font-semibold"> {{ articles[0].cat }} </span>
+            <span class="text-indigo-600 font-semibold underline"> {{ articles[0].cat }} </span>
           </div>
           <h1 class="text-center text-2xl sm:text-4xl font-bold">
             {{ articles[0].title }}
@@ -131,7 +131,7 @@
               <span class="mx-2">-</span> {{ articles[1].cat }}</span
             >
           </h2>
-          <NuxtLink to="/" class="text-indigo-600 font-semibold"> ./Home </NuxtLink>
+          <NuxtLink to="/" class="text-indigo-600 font-semibold underline"> ./Home </NuxtLink>
         </div>
 
         <NuxtLink

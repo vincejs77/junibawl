@@ -1,8 +1,8 @@
 <template>
   <div class="home-view">
     <section class="app-wrapper border-t border-gray-300">
-      <div class="app-container py-0 sm:py-24 border-l border-r border-gray-300">
-        <div class="text-center pt-32 sm:pt-24">
+      <div class="app-container py-0 sm:py-0 border-l border-r border-gray-300">
+        <div class="text-center pt-32 sm:pt-36">
           <h1
             class="flex justify-start w-full text-3xl font-black md:text-4xl md:text-center md:justify-center"
           >
@@ -26,8 +26,7 @@
 
 <script setup>
 import { useArticlesStore } from "~/store/articles";
-const articles = useArticlesStore().$state.articles;
-console.log(articles[0]);
+const articles = ref(useArticlesStore().$state.articles);
 
 const title = ref("Home - Bulabula AWAZI");
 

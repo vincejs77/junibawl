@@ -81,7 +81,7 @@
       <div
         class="app-container border-l border-r border-gray-300 py-6 h-full px-10 mx-auto flex flex-col sm:items-center sm:justify-between md:flex-row md:space-y-0"
       >
-        <p>&copy; 2022 Bulabula AWAZI</p>
+        <p class="text-center w-full text-xs">&copy; 2022 Bulabula AWAZI</p>
       </div>
     </div>
   </section>

@@ -11,10 +11,10 @@
           <h1 class="text-center text-2xl sm:text-4xl font-bold">
             {{ articles[0].title }}
           </h1>
-          <div class="flex justify-center items-center text-lg text-gray-500 mt-4">
+          <div class="flex justify-center items-center text-base text-gray-500 mt-4">
             Bulabula AWAZI
             <div class="h-2 w-2 bg-indigo-700 rounded-full mx-4"></div>
-            <span class="text-gray-400">Author</span>
+            <span class="text-gray-400">{{ articles[0].date }}</span>
           </div>
         </div>
         <div class="w-full mt-12">
@@ -131,7 +131,7 @@
               <span class="mx-2">-</span> {{ articles[1].cat }}</span
             >
           </h2>
-          <NuxtLink to="./" class="text-indigo-600 font-semibold"> ./Home </NuxtLink>
+          <NuxtLink to="/" class="text-indigo-600 font-semibold"> ./Home </NuxtLink>
         </div>
 
         <NuxtLink

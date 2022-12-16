@@ -188,11 +188,43 @@ import { useArticlesStore } from "~/store/articles";
 
 const articles = useArticlesStore().$state.articles;
 
-console.log();
+const title = ref("Bulabula AWAZI" + articles[0].title);
 
-const title = ref(articles[0].title);
+const meta = [
+  // <meta name="viewport" content="width=device-width, initial-scale=1">
+  {
+    name: "description",
+    content: articles[0].desc,
+  },
+
+  // Social
+  { property: "og:title", content: "Bulabula AWAZI" + articles[0].title },
+  {
+    property: "og:description",
+    content: articles[0].desc,
+  },
+  {
+    property: "og:url",
+    content: "https://bulabulaawazi.vercel.app/" + articles[0].link,
+  },
+  {
+    property: "og:image",
+    content: "https://bulabulaawazi.vercel.app" + articles[0].img,
+  },
+  { name: "twitter:title", content: "Bulabula AWAZI" + articles[0].title },
+  {
+    name: "twitter:description",
+    content: articles[0].desc,
+  },
+  {
+    name: "twitter:image",
+    content: "https://bulabulaawazi.vercel.app" + articles[0].img,
+  },
+  { name: "twitter:card", content: "summary_large_image" },
+];
 
 useHead({
   title,
+  meta,
 });
 </script>

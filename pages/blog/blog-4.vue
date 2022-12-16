@@ -6,7 +6,9 @@
       >
         <div class="max-w-4xl text-center mx-auto">
           <div class="mb-6">
-            <span class="text-indigo-600 font-semibold underline"> {{ articles[3].cat }} </span>
+            <span class="text-indigo-600 font-semibold underline">
+              {{ articles[3].cat }}
+            </span>
           </div>
           <h1 class="text-center text-2xl sm:text-4xl font-bold">
             {{ articles[3].title }}
@@ -142,7 +144,9 @@
               <span class="mx-2">-</span> {{ articles[4].cat }}</span
             >
           </h2>
-          <NuxtLink to="/" class="text-indigo-600 font-semibold underline"> ./Home </NuxtLink>
+          <NuxtLink to="/" class="text-indigo-600 font-semibold underline">
+            ./Home
+          </NuxtLink>
         </div>
 
         <NuxtLink
@@ -197,9 +201,43 @@ const articles = useArticlesStore().$state.articles;
 
 console.log();
 
-const title = ref(articles[3].title);
+const title = ref("Bulabula AWAZI" + articles[3].title);
+
+const meta = [
+  // <meta name="viewport" content="width=device-width, initial-scale=1">
+  {
+    name: "description",
+    content: articles[3].desc,
+  },
+
+  // Social
+  { property: "og:title", content: "Bulabula AWAZI" + articles[3].title },
+  {
+    property: "og:description",
+    content: articles[3].desc,
+  },
+  {
+    property: "og:url",
+    content: "https://bulabulaawazi.vercel.app/" + articles[3].link,
+  },
+  {
+    property: "og:image",
+    content: "https://bulabulaawazi.vercel.app" + articles[3].img,
+  },
+  { name: "twitter:title", content: "Bulabula AWAZI" + articles[3].title },
+  {
+    name: "twitter:description",
+    content: articles[3].desc,
+  },
+  {
+    name: "twitter:image",
+    content: "https://bulabulaawazi.vercel.app" + articles[3].img,
+  },
+  { name: "twitter:card", content: "summary_large_image" },
+];
 
 useHead({
   title,
+  meta,
 });
 </script>

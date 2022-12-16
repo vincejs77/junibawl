@@ -123,8 +123,8 @@
     </section>
 
     <section class="app-wrapper">
-      <div class="app-container py-16 sm:py-24 pb-6 border-l border-r border-gray-300">
-        <div class="flex justify-between">
+      <div class="app-container py-16 sm:py-24 pb-0 border-l border-r border-gray-300">
+        <div class="flex justify-between item-center">
           <h2 class="text-xl sm:text-3xl font-bold mb-12">
             Next Blog
             <span class="text-gray-400">

@@ -58,5 +58,8 @@ h1 {
 }
 
 .app-blog-content img {
-	@apply w-full max-h-[300px] object-cover mb-2;
+	@apply w-full object-cover mb-2;
+}
+.app-blog-content h2 {
+	@apply mt-8 text-2xl font-semibold;
 }

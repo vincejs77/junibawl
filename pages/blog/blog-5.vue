@@ -2,7 +2,7 @@
   <div class="about-view">
     <section class="app-wrapper">
       <div
-        class="app-container pt-36 sm:pt-40 sm:pb-16 pb-6 border-l border-r border-gray-300"
+        class="app-container pt-36 sm:pt-40 sm:pb-0 pb-0 border-l border-r border-gray-300"
       >
         <div class="max-w-4xl text-center mx-auto">
           <div class="mb-6">
@@ -28,8 +28,8 @@
     </section>
 
     <section class="app-wrapper">
-      <div class="app-container py-16 sm:py-24 pb-6 border-l border-r border-gray-300">
-        <div class="flex justify-between">
+      <div class="app-container py-16 sm:py-24 pb-0 border-l border-r border-gray-300">
+        <div class="flex justify-between item-center">
           <h2 class="text-xl sm:text-3xl font-bold mb-12">
             Return to
             <span class="text-gray-400">

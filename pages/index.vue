@@ -26,11 +26,12 @@
 
 <script setup>
 import { useArticlesStore } from "~/store/articles";
+const articles = useArticlesStore().$state.articles;
+console.log(articles[0]);
+
 const title = ref("Home - Bulabula AWAZI");
 
 useHead({
   title,
 });
-
-const articles = useArticlesStore().$state.articles;
 </script>

@@ -48,3 +48,15 @@ nav .router-link-active.router-link-exact-active {
 h1 {
 	line-height: 1.2 !important;
 }
+
+.app-blog-content a {
+	@apply text-indigo-600 font-semibold underline;
+}
+
+.app-blog-content p {
+	@apply mt-8 sm:mt-8;
+}
+
+.app-blog-content img {
+	@apply w-full max-h-[300px] object-cover mb-2;
+}

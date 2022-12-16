@@ -24,10 +24,10 @@ export default defineNuxtConfig({
 					property: "og:description",
 					content: "Information Systems and Digital Transformation"
 				},
-				{ property: "og:url", content: "https://junibawl.vercel.app/" },
+				{ property: "og:url", content: "https://bulabulaawazi.vercel.app/" },
 				{
 					property: "og:image",
-					content: "https://junibawl.vercel.app/img/cover.jpg"
+					content: "https://bulabulaawazi.vercel.app/img/cover.jpg"
 				},
 				{ name: "twitter:title", content: "Bulabula AWAZI" },
 				{
@@ -36,7 +36,7 @@ export default defineNuxtConfig({
 				},
 				{
 					name: "twitter:image",
-					content: "https://junibawl.vercel.app/img/cover.jpg"
+					content: "https://bulabulaawazi.vercel.app/img/cover.jpg"
 				},
 				{ name: "twitter:card", content: "summary_large_image" }
 			],

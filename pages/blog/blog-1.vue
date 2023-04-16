@@ -191,7 +191,6 @@ const articles = useArticlesStore().$state.articles;
 const title = ref("Bulabula AWAZI" + articles[0].title);
 
 const meta = [
-  // <meta name="viewport" content="width=device-width, initial-scale=1">
   {
     name: "description",
     content: articles[0].desc,

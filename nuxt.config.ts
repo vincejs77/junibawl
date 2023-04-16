@@ -76,6 +76,7 @@ export default defineNuxtConfig({
 			autoprefixer: {}
 		}
 	},
+
 	modules: [
 		[
 			"@pinia/nuxt",
@@ -83,5 +84,6 @@ export default defineNuxtConfig({
 				autoImports: ["defineStore", "acceptHMRUpdate"]
 			}
 		]
+		// ["@nuxtjs/tailwindcss"]
 	]
 });
